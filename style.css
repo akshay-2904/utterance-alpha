@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+}
+header {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+#logo {
+    width: 120px;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+
+nav {
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    display: block;
+    margin: 10px 0;
+    padding: 30px;
+    text-decoration: none;
+    color: rgb(136, 0, 22);
+    font-weight: bold;
+    font-size: large;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    background: #ccc;
+    transition: 0.4s;
+}
+
+.text-centered{ 
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+@media (max-width:1200px){
+    header {
+        margin: 10px;
+    }
+}
+
+@media (max-width:768px){
+    .menu-toggle {
+        display: block;
+        height: 40px;
+        width: 40px;
+        margin-top: 35px;
+        margin-right: 15px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(136, 0, 22);
+
+    }
+    .menu-toggle:before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before {
+        content: '\f00d';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    nav {
+        display: none;
+        width: 100%;
+    }
+    nav.active {
+        display: block;
+    }
+    nav.active ul{
+        display: block;
+    }
+    nav.active ul li a{
+        margin: 0;
+    }
+}
+
+footer {
+    position: relative;
+    max-width: 100%;
+    margin: 20px 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.copyright {
+    float: left;
+    padding: 10px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    float: right;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+footer ul li{
+    margin-right: 10px;
+    padding: 5px;
+}
+
+footer ul li i{
+    color: #000000;
+    text-align: center;
+    width:30px;
+    height: auto;
+}
+footer ul li:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+.clearfix {
+    clear: both;
+}
